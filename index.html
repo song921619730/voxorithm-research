@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ethan Brooks — Research — Voxorithm</title>
+<meta name="description" content="Ethan Brooks, Research Lead at Voxorithm. Applied machine learning and agentic AI systems.">
+<style>
+  :root{
+    --bg:#0e1116; --card:#161b22; --text:#e6edf3; --muted:#8b949e;
+    --line:#21262d; --accent:#4a9eff;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#ffffff; --card:#f6f8fa; --text:#1f2328; --muted:#59636e; --line:#d1d9e0; --accent:#0969da; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  .wrap{max-width:820px; margin:0 auto; padding:56px 24px 80px}
+  header{margin-bottom:40px}
+  h1{font-size:30px; margin:0 0 6px; letter-spacing:-.01em}
+  .role{color:var(--muted); font-size:15px; margin-bottom:18px}
+  .meta{display:flex; flex-wrap:wrap; gap:8px}
+  .tag{
+    font-size:13px; padding:4px 10px; border:1px solid var(--line);
+    border-radius:999px; color:var(--muted); text-decoration:none;
+  }
+  a.tag:hover{border-color:var(--accent); color:var(--accent)}
+  section{margin:38px 0}
+  h2{font-size:17px; margin:0 0 12px; letter-spacing:.02em; text-transform:uppercase; color:var(--muted)}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px 22px}
+  ul{margin:0; padding-left:20px}
+  li{margin:6px 0}
+  code{background:var(--card); border:1px solid var(--line); padding:1px 6px; border-radius:5px; font-size:14px}
+  footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:13px}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Ethan Brooks</h1>
+    <div class="role">Founder &amp; Research Lead &middot; Voxorithm</div>
+    <div class="meta">
+      <a class="tag" href="mailto:Ethanbrooks@voxorithm.com">Ethanbrooks@voxorithm.com</a>
+      <a class="tag" href="https://orcid.org/0009-0001-3173-4010" rel="me" target="_blank">ORCID 0009-0001-3173-4010</a>
+      <a class="tag" href="https://voxorithm.com">voxorithm.com</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Research focus</h2>
+    <div class="card">
+      <p style="margin:0">
+        Applied machine learning and agentic AI systems. My work builds pipelines that turn
+        unstructured technical material — papers, specifications, internal reports — into
+        structured, citable, reproducible artifacts, and measures their quality against
+        manual baselines.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Current work</h2>
+    <div class="card">
+      <ul>
+        <li>Agent-assisted literature and specification triage with source-level citations.</li>
+        <li>Reproduction of reported results from published methods inside our own codebase.</li>
+        <li>Evaluation of agentic workflows on accuracy, time-to-result, and reproducibility.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Research interests</h2>
+    <div class="card">
+      <ul>
+        <li>Agentic AI systems and tool-using language models</li>
+        <li>Retrieval and grounded verification for technical documents</li>
+        <li>Applied machine learning for engineering workflows</li>
+        <li>Reproducibility of computational research</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Affiliation</h2>
+    <div class="card">
+      <p style="margin:0">
+        Voxorithm — research and engineering on applied AI systems.<br>
+        <span style="color:var(--muted); font-size:14px">
+          Institutional contact: <a href="mailto:Ethanbrooks@voxorithm.com">Ethanbrooks@voxorithm.com</a>
+        </span>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    Last updated: <span id="d"></span> &middot; Ethan Brooks, Voxorithm
+  </footer>
+</div>
+<script>
+  document.getElementById('d').textContent = new Date().toISOString().slice(0,10);
+</script>
+</body>
+</html>
+
